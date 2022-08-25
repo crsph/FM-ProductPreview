@@ -9,7 +9,7 @@ import useWindowDimension from "../utils/window-dimension";
 
 export default function Home({ productData }) {
   const { width, height } = useWindowDimension();
-  const productImage = width <= 375 ? mobileImage : desktopImage;
+  const productImage = width <= 390 ? mobileImage : desktopImage;
 
   return (
     <div className={styles["container"]}>

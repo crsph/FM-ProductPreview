@@ -21,7 +21,7 @@
 }
 
 .preview-container {
-  height: 466px; // Not sure if necessary
+  height: 466px;
   width: 622px;
   background-color: config.$WHITE;
   border-radius: 1em;
@@ -70,7 +70,6 @@
 
 .product-price-container {
   display: flex;
-  // flex-direction: row;
   align-items: center;
 
   &__current {
@@ -87,8 +86,9 @@
   }
 }
 
-@media all and (max-width: config.$MOBILE) {
+@media all and (max-width: 390px) {
   .container {
+    height: 667px;
     padding: 2rem 1rem;
   }
 
