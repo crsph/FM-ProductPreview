@@ -69,12 +69,7 @@
 
 .footer {
   color: config.$DARK_GRAYISH_BLUE;
-  position: absolute;
-  bottom: 30px;
-
-  p {
-    margin: 0;
-  }
+  position: relative;
 
   a {
     color: config.$DARK_CYAN;
