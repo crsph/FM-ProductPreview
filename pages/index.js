@@ -8,7 +8,7 @@ import styles from "../styles/Home.module.scss";
 import useWindowDimension from "../utils/window-dimension";
 
 export default function Home({ productData }) {
-  const { width, height } = useWindowDimension();
+  const { width } = useWindowDimension();
   const productImage = width <= 390 ? mobileImage : desktopImage;
 
   return (
@@ -35,7 +35,7 @@ export default function Home({ productData }) {
           <p className={styles["product-description"]}>
             {productData.description}
           </p>
-           <div className={styles["product-price-container"]}>
+          <div className={styles["product-price-container"]}>
             <p className={styles["product-price-container__current"]}>
               {productData.currentPrice}
             </p>
