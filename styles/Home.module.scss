@@ -67,6 +67,21 @@
   }
 }
 
+.footer {
+  color: config.$DARK_GRAYISH_BLUE;
+  position: absolute;
+  bottom: 30px;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: config.$DARK_CYAN;
+    text-decoration: underline;
+  }
+}
+
 .product-price-container {
   display: flex;
   align-items: center;

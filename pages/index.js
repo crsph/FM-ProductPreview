@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import { getProduct } from "../lib/products";
 import mobileImage from "../public/image-product-mobile.jpg";
@@ -51,6 +52,27 @@ export default function Home({ productData }) {
           <Button />
         </div>
       </main>
+
+      <div className={styles["footer"]}>
+        <p>
+          Challenge by{" "}
+          <a
+            target="_blank"
+            href="https://www.frontendmentor.io/home"
+            rel="noopener noreferrer"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a
+            target="_blank"
+            href="https://github.com/crsph"
+            rel="noopener noreferrer"
+          >
+            Chris Hu
+          </a>
+        </p>
+      </div>
     </div>
   );
 }
