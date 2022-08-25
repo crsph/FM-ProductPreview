@@ -36,7 +36,7 @@
   border-radius: 1em 0 0 1em;
 }
 
-.description-container {
+.product-card-container {
   color: black;
   height: 100%;
   width: 50%;
@@ -48,23 +48,23 @@
   p {
     margin: 0;
   }
-}
 
-.product-label {
-  font-family: Montserrat;
-  color: config.$DARK_GRAYISH_BLUE;
-  letter-spacing: .3em;
-}
+  &__label {
+    font-family: Montserrat;
+    color: config.$DARK_GRAYISH_BLUE;
+    letter-spacing: .3em;
+  }
 
-.product-title {
-  font-family: Fraunces;
-  font-size: 2.2em;
-}
+  &__title {
+    font-family: Fraunces;
+    font-size: 2.2em;
+  }
 
-.product-description {
-  font-family: Montserrat;
-  color: config.$DARK_GRAYISH_BLUE;
-  line-height: 1.5;
+  &__description {
+    font-family: Montserrat;
+    color: config.$DARK_GRAYISH_BLUE;
+    line-height: 1.5;
+  }
 }
 
 .product-price-container {
@@ -85,9 +85,8 @@
   }
 }
 
-@media all and (max-width: 390px) {
+@media all and (max-width: config.$MOBILE) {
   .container {
-    // height: auto;
     padding: 2rem 1rem;
   }
 
@@ -106,26 +105,26 @@
     display: inline-table
   }
 
-  .description-container {
+  .product-card-container {
     height: 100%;
     width: 100%;
     padding: 1.5rem;
     justify-content: unset;
-  }
 
-  .product-label {
-    font-size: .8em;
-    letter-spacing: .3em;
-    margin-bottom: 1rem !important;
-  }
+    &__label {
+      font-size: .8em;
+      letter-spacing: .3em;
+      margin-bottom: 1rem !important;
+    }
 
-  .product-title {
-    font-size: 2em;
-    margin-bottom: 1rem !important;
-  }
+    &__title {
+      font-size: 2em;
+      margin-bottom: 1rem !important;
+    }
 
-  .product-description {
-    margin-bottom: 1rem !important;
+    &__description {
+      margin-bottom: 1rem !important;
+    }
   }
 
   .product-price-container {

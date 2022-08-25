@@ -29,10 +29,10 @@ export default function Home({ productData }) {
           />
         </div>
 
-        <div className={styles["description-container"]}>
-          <p className={styles["product-label"]}>{productData.label}</p>
-          <p className={styles["product-title"]}>{productData.title}</p>
-          <p className={styles["product-description"]}>
+        <div className={styles["product-card-container"]}>
+          <p className={styles["product-card-container__label"]}>{productData.label}</p>
+          <p className={styles["product-card-container__title"]}>{productData.title}</p>
+          <p className={styles["product-card-container__description"]}>
             {productData.description}
           </p>
           <div className={styles["product-price-container"]}>
