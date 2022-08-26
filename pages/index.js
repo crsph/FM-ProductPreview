@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import { getProduct } from "../lib/products";
 import mobileImage from "../public/image-product-mobile.jpg";
@@ -10,7 +9,7 @@ import useWindowDimension from "../utils/window-dimension";
 
 export default function Home({ productData }) {
   const { width } = useWindowDimension();
-  const productImage = width <= 390 ? mobileImage : desktopImage;
+  const productImage = width <= 630 ? mobileImage : desktopImage;
 
   return (
     <div className={styles["container"]}>
