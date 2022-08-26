@@ -66,7 +66,7 @@ export default function Home({ productData }) {
           . Coded by{" "}
           <a
             target="_blank"
-            href="https://github.com/crsph"
+            href="https://github.com/crsph/FM-ProductPreview"
             rel="noopener noreferrer"
           >
             Chris Hu
